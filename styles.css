@@ -1,3 +1,26 @@
+.skills .skill {
+    margin-bottom: 15px;
+}
+
+.skills .progress-bar {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.skills .progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #3498db;
+}
+
+.skills p {
+    margin: 0;
+    font-weight: bold;
+}
+
 .contact-info p {
     display: flex;
     align-items: center;
