@@ -1,3 +1,13 @@
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
 /* Reset */
 * {
     margin: 0;
