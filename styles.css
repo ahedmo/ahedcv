@@ -84,7 +84,7 @@ body {
     content: '';
     display: block;
     height: 100%;
-    width: var(--progress, 50%);
+    width: var(--progress, 90%);
     background: #3498db;
     transition: width 0.3s ease;
 }
