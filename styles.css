@@ -45,6 +45,22 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+.contact a {
+    color: #333;
+    text-decoration: none;
+}
+
 /* About Section */
 .about {
     background-color: #fff;
@@ -121,34 +137,6 @@ header nav ul li a {
 
 .portfolio-item .overlay p {
     font-size: 1.2em;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact form input,
-.contact form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Footer */
