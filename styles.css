@@ -1,27 +1,46 @@
-.skills .skill {
-    margin-bottom: 20px;
+.skills {
+    margin: 20px 0;
 }
 
-.skills .progress-bar {
-    width: 100%;
-    background-color: #e0e0e0;  /* Color for background */
-    border-radius: 5px;
-    height: 10px;
-    margin-top: 5px;
+.skill {
+    margin-bottom: 15px;
 }
 
-.skills .progress {
-    height: 100%;
-    border-radius: 5px;
-    background-color: #3498db;  /* The color for the progress bar */
-}
-
-.skills p {
+.skill span {
     font-weight: bold;
-    font-size: 1rem;
+    display: inline-block;
     margin-bottom: 5px;
+    color: #333;
 }
 
+.progress-bar {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 15px;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 8px;
+    position: relative;
+    transition: width 0.4s ease-in-out;
+}
+
+.progress::after {
+    content: attr(style);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
 
 .contact-info p {
     display: flex;
