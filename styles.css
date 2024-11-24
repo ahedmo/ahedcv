@@ -100,12 +100,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.project-card img {
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-thumbnail {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
