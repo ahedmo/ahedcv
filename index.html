@@ -1,103 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahed Mounis - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ahed Mounis - Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="intro">
-                <img src="profile.jpg" alt="Ahed Mounis" class="profile-img">
-                <div class="intro-text">
-                    <h1>Hi, I'm Ahed Mounis</h1>
-                    <p>I'm a passionate graphic designer with diverse skills in graphic design, branding, and web design.</p>
-                    <a href="CV.pdf" class="cv-btn" download>Download CV</a>
-                </div>
+            <div class="logo">
+                <h1>Ahed Mounis</h1>
+                <p>Graphic Designer</p>
             </div>
-            <div class="stats">
-                <div class="stat">
-                    <h2>Years of Experience</h2>
-                    <p>1+</p>
-                </div>
-                <div class="stat">
-                    <h2>Projects Completed</h2>
-                    <p>50+</p>
-                </div>
-                <div class="stat">
-                    <h2>Happy Clients</h2>
-                    <p>40+</p>
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services">
+    <section id="about" class="about">
         <div class="container">
-            <h2>What I Offer</h2>
-            <div class="services-list">
-                <div class="service">
-                    <h3>Graphic Design</h3>
-                    <p>Logo design, print design, and marketing materials.</p>
-                </div>
-                <div class="service">
-                    <h3>Web Design</h3>
-                    <p>Creating beautiful user interfaces for websites.</p>
-                </div>
-                <div class="service">
-                    <h3>Branding</h3>
-                    <p>Rebranding and visual identity design.</p>
+            <div class="about-content">
+                <img src="photocv.jpg" alt="Ahed Mounis">
+                <div class="info">
+                    <h2>Hi, I'm Ahed Mounis</h2>
+                    <p>I am a passionate graphic designer with expertise in various design tools such as Adobe Illustrator, Photoshop, Blender, and After Effects. I have extensive experience in both print and digital design, with a focus on branding, UX/UI, and motion graphics.</p>
+                    <p><strong>Skills:</strong> Graphic Design, Branding, Web Design, Motion Graphics, UI/UX Design, Adobe Suite (Illustrator, Photoshop, After Effects), Blender.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-items">
-                <!-- Your works will go here -->
+            <h2>My Works</h2>
+            <div class="portfolio-gallery">
+                <!-- Example project 1 -->
                 <div class="portfolio-item">
-                    <img src="work1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <p>Project Title 1</p>
+                    </div>
                 </div>
+                <!-- Example project 2 -->
                 <div class="portfolio-item">
-                    <img src="work2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <p>Project Title 2</p>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="work3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                </div>
-                <!-- Add more portfolio items as needed -->
+                <!-- Add more projects here -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form action="mailto:ahed.mo.98@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ahed Mounis | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
