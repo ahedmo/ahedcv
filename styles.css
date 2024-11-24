@@ -1,46 +1,61 @@
-.skills {
-    margin: 20px 0;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
-.skill {
-    margin-bottom: 15px;
+.skill-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill span {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 5px;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.skill-card h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
     color: #333;
 }
 
+.skill-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .progress-bar {
-    width: 100%;
     background-color: #f1f1f1;
     border-radius: 8px;
     overflow: hidden;
-    height: 15px;
-    position: relative;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 10px;
+    margin-top: 5px;
 }
 
 .progress {
     height: 100%;
     background-color: #3498db;
     border-radius: 8px;
-    position: relative;
     transition: width 0.4s ease-in-out;
 }
 
-.progress::after {
-    content: attr(style);
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
 
 .contact-info p {
     display: flex;
