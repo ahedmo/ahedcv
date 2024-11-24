@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header Section */
@@ -49,29 +50,35 @@ body {
     margin-top: 10px;
 }
 
-/* Contact Section */
-.contact {
+/* CV Section */
+.cv {
     background: #fff;
     padding: 30px;
     text-align: center;
 }
 
-.contact h2 {
+.cv h2 {
     font-size: 2rem;
     color: #1d3557;
     margin-bottom: 20px;
 }
 
-.contact ul {
+.cv-content h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.cv-content ul {
     list-style: none;
+    margin-top: 10px;
 }
 
-.contact li {
+.cv-content ul li {
     font-size: 1.1rem;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-.contact a {
+.cv-content a {
     color: #457b9d;
     text-decoration: none;
 }
@@ -117,6 +124,11 @@ body {
 .project-card h3 {
     margin-top: 15px;
     font-size: 1.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 /* Footer Section */
