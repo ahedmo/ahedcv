@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahed Mounis Ferwana - Graphic Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset */
         * {
@@ -14,58 +14,147 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
             color: #333;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
         }
 
+        /* Container */
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 20px auto;
-            background: #fff;
             padding: 20px;
+            background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 2.5rem;
-            color: #3498db;
+        /* Header Section */
+        .header {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
 
-        h2 {
-            font-size: 1.5rem;
-            text-align: center;
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin: 10px 0;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
             color: #555;
+            font-weight: 300;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.5rem;
+            color: #fff;
+            background: #3498db;
+            padding: 10px 15px;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
 
-        .section-title {
-            font-size: 1.3rem;
-            color: #fff;
-            background-color: #3498db;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
+        .contact-info p {
+            font-size: 1rem;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info i {
+            color: #3498db;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .skill-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Progress Circle */
+        .progress-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: conic-gradient(#3498db var(--progress), #ddd 0%);
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress-circle::after {
+            content: attr(data-progress) '%';
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Sections */
         .section {
             margin-bottom: 30px;
         }
 
+        .info-card {
+            padding: 15px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
 
-        li {
-            margin-bottom: 10px;
+        ul li {
+            margin: 10px 0;
         }
 
         a {
@@ -76,102 +165,56 @@
         a:hover {
             text-decoration: underline;
         }
-
-        .info-card {
-            padding: 15px;
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .info-card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .portfolio a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .portfolio a:hover {
-            background-color: #2874a6;
-        }
-
-        .languages ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .languages li {
-            background-color: #3498db;
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div style="text-align: center; margin-bottom: 20px;">
-    <img src="photocv.jpg" alt="Ahed Mounis Ferwana" style="width: 300px; height: 300px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-</div>
+        <!-- Header -->
+        <div class="header">
+            <img src="photocv.jpg" alt="Ahed Mounis Ferwana">
+            <h1>Ahed Mounis Ferwana</h1>
+            <h2>Crafting Visual Stories with Creativity and Precision</h2>
+        </div>
 
-      <h1 style="font-size: 2.5rem; color: #3498db; text-align: center; margin-bottom: 10px;">Ahed Mounis Ferwana</h1>
-<h2 style="font-size: 1.5rem; text-align: center; color: #555; margin-bottom: 20px;">Crafting Visual Stories with Creativity and Precision</h2>
-
-
-        <!-- Contact Information -->
+        <!-- Contact Info -->
         <div class="contact-info">
-    <h3 class="section-title">Contact Information</h3>
-    <p><i class="fas fa-phone-alt" style="color: #3498db;"></i> Phone: +970595891086</p>
-    <p><i class="fas fa-envelope" style="color: #3498db;"></i> Email: <a href="mailto:ahed.mo.98@gmail.com" style="color: #333; text-decoration: none;">ahed.mo.98@gmail.com</a></p>
-    <p>
-        <i class="fab fa-behance" style="color: #3498db;"></i> 
-        <a href="https://www.behance.net/ahedmounis" target="_blank" style="color: #3498db; text-decoration: none;">Behance</a> | 
-        <i class="fab fa-linkedin" style="color: #3498db;"></i> 
-        <a href="https://www.linkedin.com/in/ahedmounis/" target="_blank" style="color: #3498db; text-decoration: none;">LinkedIn</a>
-    </p>
-</div>
-
+            <p><i class="fas fa-phone-alt"></i> +970595891086</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:ahed.mo.98@gmail.com">ahed.mo.98@gmail.com</a></p>
+            <p>
+                <i class="fab fa-behance"></i> <a href="https://www.behance.net/ahedmounis" target="_blank">Behance</a> |
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ahedmounis/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
 
         <!-- Objective -->
         <div class="section">
             <h3 class="section-title">Objective</h3>
             <div class="info-card">
-                <p>As a passionate Graphic Designer, my goal is to create visually compelling designs that elevate brands and engage audiences. With experience in both freelance and corporate environments, I strive to bring creative solutions to every project I work on.</p>
+                <p>As a passionate Graphic Designer, my goal is to create visually compelling designs that elevate brands and engage audiences.</p>
             </div>
         </div>
 
         <!-- Skills -->
-
-        
-<section class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <i class="fab fa-blender skill-icon"></i>
-            <h3>Blender</h3>
-            <p>Expert in 3D modeling and rendering</p>
-            <div class="progress-circle" data-progress="90"></div>
+        <div class="section">
+            <h3 class="section-title">Skills</h3>
+            <div class="skills-section">
+                <div class="skill-card">
+                    <h3>Blender</h3>
+                    <div class="progress-circle" data-progress="90" style="--progress: 90%;"></div>
+                    <p>Expert in 3D modeling and rendering</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Adobe Illustrator</h3>
+                    <div class="progress-circle" data-progress="85" style="--progress: 85%;"></div>
+                    <p>Creative vector designs</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Adobe Photoshop</h3>
+                    <div class="progress-circle" data-progress="80" style="--progress: 80%;"></div>
+                    <p>Photo editing and compositing</p>
+                </div>
+            </div>
         </div>
-        <div class="skill-card">
-            <i class="fab fa-adobe skill-icon"></i>
-            <h3>Adobe Illustrator</h3>
-            <p>Creative vector designs</p>
-            <div class="progress-circle" data-progress="85"></div>
-        </div>
-        <!-- Add more skill-cards as needed -->
-    </div>
-</section>
-
 
         <!-- Work Experience -->
         <div class="section">
@@ -184,33 +227,6 @@
             </div>
         </div>
 
-        <!-- Projects -->
-        <div class="section">
-            <h3 class="section-title">Projects</h3>
-            <ul>
-                <li><a href="https://www.behance.net/gallery/212697607/brooz" target="_blank">Brooz Brand</a> - Brooz is a modern branding project showcasing a creative visual identity for a multi-service agency..</li>
-                <li><a href="https://www.behance.net/gallery/212928333/3d-keyboard">3D Keyboard</a> - 3D Keyboard is a dynamic and detailed 3D design project showcasing an innovative and realistic keyboard mode.</li>
-            </ul>
-        </div>
-
-        <!-- Certifications -->
-        <div class="section">
-            <h3 class="section-title">Certifications</h3>
-            <ul>
-                <li>Adobe Certified Expert - Photoshop</li>
-                <li>Blender 3D Mastery - Online Course</li>
-            </ul>
-        </div>
-
-        <!-- Awards -->
-        <div class="section">
-            <h3 class="section-title">Awards</h3>
-            <ul>
-                <li>Best Designer Award - Motion X</li>
-                <li>Creative Leader of the Year - DotMotion</li>
-            </ul>
-        </div>
-
         <!-- Education -->
         <div class="section">
             <h3 class="section-title">Education</h3>
@@ -218,16 +234,6 @@
                 <p>Diploma in Graphic Design</p>
                 <p>University College of Applied Sciences, 2023</p>
             </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="section languages">
-            <h3 class="section-title">Languages</h3>
-            <ul>
-                <li>Arabic: Fluent</li>
-                <li>English: Very Good</li>
-                <li>Dutch: Beginner</li>
-            </ul>
         </div>
     </div>
 </body>
