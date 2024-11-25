@@ -6,78 +6,101 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    background: #f8f9fa;
     color: #333;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background: linear-gradient(90deg, #333, #444);
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 header .logo h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 5px;
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin-top: 15px;
     display: flex;
-    justify-content: flex-end;
-}
-
-header nav ul li {
-    margin-left: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #fcb900;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #fff;
-    padding: 40px 0;
+    background: #fff;
+    padding: 50px 20px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contact p {
-    font-size: 1.2em;
-}
-
-.contact a {
+.contact h2 {
+    font-size: 2rem;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
     text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* About Section */
 .about {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-.about-content {
+    background: #f9f9f9;
+    padding: 50px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .about-content img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-content .info {
@@ -85,48 +108,67 @@ header nav ul li a {
 }
 
 .about-content .info h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .about-content .info p {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 10px;
 }
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #eee;
-    padding: 40px 0;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
 }
 
 .portfolio-item .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -135,14 +177,11 @@ header nav ul li a {
     opacity: 1;
 }
 
-.portfolio-item .overlay p {
-    font-size: 1.2em;
-}
-
 /* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }
