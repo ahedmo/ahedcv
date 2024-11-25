@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+    /* تعيين الخصائص المختلفة للهواتف والشاشات الصغيرة */
+}
+
 /* Header */
 header {
     background: linear-gradient(90deg, #0072ce, #ffd700);
