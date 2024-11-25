@@ -10,3 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// تفعيل التأثيرات عند التمرير
+document.addEventListener('scroll', function () {
+    const elements = document.querySelectorAll('.about-content .info h2, .contact h2');
+    elements.forEach(element => {
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add('visible');
+        }
+    });
+});
