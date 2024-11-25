@@ -5,6 +5,37 @@
     box-sizing: border-box;
 }
 
+P {
+    text-align: center
+}
+
+H1 {
+    text-align: center
+}
+
+H2 {
+    text-align: center
+}
+
+H3 {
+    text-align: center
+}
+
+H4 {
+    text-align: center
+}
+
+H5 {
+    text-align: center
+}
+
+H6 {
+    text-align: center
+}
+
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
@@ -21,7 +52,7 @@ body {
 @media only screen and (max-width: 768px) {
     header {
         padding: 15px 0;
-        text-align: left;
+        text-align: center;
     }
 
     .portfolio-gallery {
@@ -168,7 +199,9 @@ header nav ul li a:hover {
     gap: 20px;
     flex-wrap: wrap;
 }
-
+.about-content{
+    align-items: center;
+}
 .about-content img {
     width: 200px;
     height: 200px;
