@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahed Mounis - Graphic Designer</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #104f55; color: #1eebaa; }
+        .container { width: 85%; margin: 0 auto; }
+        /* Header */
+        header { background: linear-gradient(90deg, #4e54c8, #8f94fb); color: #fff; padding: 20px 0; text-align: center; }
+        header .logo h1 { font-size: 2.5em; }
+        header .logo p { font-size: 1.2em; margin-top: 5px; }
+        header nav ul { list-style: none; margin-top: 15px; }
+        header nav ul li { display: inline-block; margin: 0 10px; }
+        header nav ul li a { color: #fff; text-decoration: none; font-weight: 600; padding: 5px 10px; transition: background 0.3s ease; }
+        header nav ul li a:hover { background: #ff7f50; border-radius: 5px; }
+        /* Hero Section */
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 0; background: #f5f5f5; }
+        .hero .hero-content { max-width: 50%; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.5em; margin-bottom: 30px; }
+        .hero .cta-button { background: #4e54c8; color: #fff; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2em; transition: background 0.3s ease; }
+        .hero .cta-button:hover { background: #8f94fb; }
+        .hero-image { max-width: 40%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+        /* About Section */
+        .about { background-color: #fff; padding: 60px 0; text-align: center; }
+        .about-content { display: flex; justify-content: center; align-items: center; gap: 40px; }
+        .about img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+        .about .info { max-width: 600px; text-align: left; }
+        .about .info h2 { font-size: 2em; margin-bottom: 15px; }
+        .about .info p { margin-bottom: 15px; }
+        /* Portfolio Section */
+        .portfolio { background-color: #f5f5f5; padding: 60px 0; }
+        .portfolio h2 { text-align: center; margin-bottom: 40px; font-size: 2.5em; }
+        .portfolio-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .portfolio-item { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+        .portfolio-item img { width: 100%; display: block; transition: transform 0.3s ease; }
+        .portfolio-item:hover img { transform: scale(1.1); }
+        .portfolio-item .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); color: #fff; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; }
+        .portfolio-item:hover .overlay { opacity: 1; }
+        .portfolio-item .overlay p { font-size: 1.2em; }
+        /* Contact Section */
+        .contact { background: #fff; padding: 60px 0; text-align: center; }
+        .contact h2 { font-size: 2.5em; margin-bottom: 20px; }
+        .contact a { color: #4e54c8; text-decoration: none; font-weight: 600; }
+        .contact a:hover { text-decoration: underline; }
+        /* Footer */
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px 0; }
+    </style>
 </head>
 
 <body>
@@ -26,15 +72,22 @@
         </div>
     </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Creative Space</h1>
+            <p>Discover my world of design, creativity, and innovation. Let's create something amazing together.</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+        <img src="hero-image.jpg" alt="Creative Design" class="hero-image">
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:ahed.mo.98@gmail.com">ahed.mo.98@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+970595891086">+970 595 891086</a></p>
-                <p><strong>Behance:</strong> <a href="https://www.behance.net/ahedmounis" target="_blank">ahedmounis</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahedmounis/" target="_blank">Ahed Mounis</a></p>
-            </div>
+            <p><strong>Email:</strong> <a href="mailto:ahed.mo.98@gmail.com">ahed.mo.98@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+970595891086">+970 595 891086</a></p>
+            <p><strong>Behance:</strong> <a href="https://www.behance.net/ahedmounis" target="_blank">ahedmounis</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahedmounis/" target="_blank">Ahed Mounis</a></p>
         </div>
     </section>
 
